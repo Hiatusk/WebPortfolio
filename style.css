@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,400;0,500;0,600;0,700;1,400&display=swap');
+
+body {
+    background-color: #fafafa;
+}
+
+
+
+.header {
+    font-family: 'Work Sans', sans-serif;
+    padding-left: 10%;
+    font-size: calc(2.5em + 2vw);
+    align-content: left;
+}
+
+h1 {
+    margin-top: 15%;
+    color: rgb(43, 42, 42);
+}
+
+h2 {
+    margin-top: calc(-0.5em + -1vw);
+    color: rgb(46, 0, 65);
+}
+
+.glassSquare {
+    -webkit-backdrop-filter: blur(4px);
+    backdrop-filter: blur(4px);
+
+    align-content: right;
+    position: fixed;
+    display: inline-block;
+    top: calc(15px + 11vw);
+    right: 50%;
+
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    
+    box-shadow: 0 8px 32px 0 rgb(202, 202, 202);
+    opacity: 65%;
+
+}
+
+.oneSet {
+    transform: rotate(-29deg) skew(35deg);  
+    height: calc(50px + 12vw);
+    width: calc(50px + 12vw);
+}
+
+.twoSet {
+    transform: rotate(-29deg) skew(35deg) translateY(7vw) translateX(-14vw);
+    height: calc(20px + 12vw);
+    width: calc(20px + 12vw);
+}
+
+.threeSet {
+    transform: rotate(-29deg) skew(35deg) translateY(10.9vw) translateX(-13vw);  
+    height: calc(50px + 12vw);
+    width: calc(50px + 12vw);  
+}
+
+@media screen and (min-width: 1200px)                   { /* Max width effect */
+    .header {
+        font-size: 63.5px;
+    }
+
+    h1 {
+        margin-top: 175px;
+    }
+
+    h2 {
+        margin-top: calc(-45px);
+    }
+
+    .glassSquare {
+        top: 150px;
+    }
+
+    .oneSet {
+        height: 165px;
+        width: 200px;
+    }
+
+    .twoSet {
+        height: 67px;
+        width: 80px;
+    }
+
+    .threeSet {
+        height: 165px;
+        width: 200px;
+    }
+
+}
